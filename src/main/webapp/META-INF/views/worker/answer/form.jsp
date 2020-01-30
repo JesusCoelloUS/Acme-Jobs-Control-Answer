@@ -17,12 +17,12 @@
 <%@taglib prefix="acme" tagdir="/WEB-INF/tags"%>
 
 <acme:form>
-	<acme:form-textarea code="worker.answer.form.label.tracer" path="tracer"/>
+	<acme:form-url code="worker.answer.form.label.tracer" path="tracer"/>
 	<acme:form-textbox code="worker.answer.form.label.password" path="password"/>
 </acme:form>
 
 <jstl:if test="${isProtected}">
-	<acme:input code="worker.answer.form.label.enterPassword" path="enterPassword" group="input"/><acme:button id="button" code="worker.answer.form.button.show"/>
+	<acme:input type="password" code="worker.answer.form.label.enterPassword" path="enterPassword" group="input"/><acme:button id="button" code="worker.answer.form.button.show"/>
 	<script>
 		$(document).ready(function(){
 			$("#form").hide();

@@ -39,7 +39,7 @@
 	<acme:form-textarea code="worker.application.form.label.qualifications" path="qualifications" readonly="${option}"/>
 	
 	<jstl:if test="${hasBisit}">
-		<acme:form-textarea code="worker.application.form.label.answer.tracer" path="answerTracer" readonly="${option}"/>
+		<acme:form-url code="worker.application.form.label.answer.tracer" path="answerTracer" readonly="${option}"/>
 		<acme:form-checkbox code="worker.application.form.label.answer.passwordProtected" path="answerPasswordProtected" readonly="${option}"/>
 		<acme:form-textbox code="worker.application.form.label.answer.password" path="answerPassword" readonly="${option}"/>
 	</jstl:if>

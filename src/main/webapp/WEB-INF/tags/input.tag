@@ -5,11 +5,13 @@
 
 <%@attribute name="path" required="true" type="java.lang.String"%>
 <%@attribute name="code" required="true" type="java.lang.String"%>
+<%@attribute name="type" required="true" type="java.lang.String"%>
 <%@attribute name="group" required="false" type="java.lang.String"%>
+<%@attribute name="autocomplete" required="false" type="java.lang.Boolean"%>
 
 <div id="${group}" class="form-group">
 	<label>
 		<acme:message code="${code}"/>
 	</label>		
-   	<input id="${path}" type="text" class="form-control"/>
+   	<input id="${path}" type="${type}" class="form-control"/>
 </div>
