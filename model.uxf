@@ -903,7 +903,7 @@ Answer
 --
 +text:String{NotBlank}
 +passwordProtected:Boolean
-+password:String{Length(min=8)}</panel_attributes>
++password:String</panel_attributes>
     <additional_attributes/>
   </element>
   <element>
@@ -926,11 +926,28 @@ m2=1</panel_attributes>
       <x>1233</x>
       <y>432</y>
       <w>261</w>
-      <h>45</h>
+      <h>54</h>
     </coordinates>
-    <panel_attributes>Password must include at least 3 letters,
-3 numbers and 2 puntuaction symbol
+    <panel_attributes>Password must be at least ten characters 
+long and must include at least a letter,
+a number and a puntuaction symbol
 bg=blue</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>1557</x>
+      <y>477</y>
+      <w>378</w>
+      <h>81</h>
+    </coordinates>
+    <panel_attributes>&lt;&lt;Form&gt;&gt;
+Dashboard
+--
++ratioOfJobsThatHaveABisit:Double
++ratioOfBisitsThatHaveATracer:Double
++ratioOfApplicationsThatHaveAPasswordProtectedTracer:Double</panel_attributes>
     <additional_attributes/>
   </element>
 </diagram>

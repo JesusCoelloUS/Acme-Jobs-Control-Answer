@@ -13,8 +13,5 @@ administrator.configuration.list.label.threshold = Threshold
 
 administrator.configuration.form.label.spamWords = Spam words
 administrator.configuration.form.label.threshold = Threshold
-administrator.configuration.form.label.findRatioOfJobsThatHaveABisit = Ratio of jobs that have a bisit
-administrator.configuration.form.label.findRationOfBisitsThatHaveATracer = Ratio of bisit that have a tracer
-administrator.configuration.form.label.findRationOfApplicationsThatHaveAPasswordProtectedTracer = Ratio of applications that have a password protected tracer
 administrator.configuration.form.button.update = Update
 administrator.configuration.form.button.return = Return

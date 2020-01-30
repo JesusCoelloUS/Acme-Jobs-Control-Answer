@@ -18,9 +18,6 @@
 <acme:form>
 	<acme:form-textarea code="administrator.configuration.form.label.spamWords" path="spamWords"/>
 	<acme:form-textbox code="administrator.configuration.form.label.threshold" path="threshold"/>
-	<acme:form-textbox code="administrator.configuration.form.label.findRatioOfJobsThatHaveABisit" path="findRatioOfJobsThatHaveABisit" readonly="true"/>
-	<acme:form-textbox code="administrator.configuration.form.label.findRationOfBisitsThatHaveATracer" path="findRationOfBisitsThatHaveATracer" readonly="true"/>
-	<acme:form-textbox code="administrator.configuration.form.label.findRationOfApplicationsThatHaveAPasswordProtectedTracer" path="findRationOfApplicationsThatHaveAPasswordProtectedTracer" readonly="true"/>
 
 	<acme:form-submit test="${command == 'update' }" code="administrator.configuration.form.button.update" action="/administrator/configuration/update"/>
 	<acme:form-submit test="${command == 'show' }" code="administrator.configuration.form.button.update" action="/administrator/configuration/update"/>
