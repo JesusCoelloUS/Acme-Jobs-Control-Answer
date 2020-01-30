@@ -1,0 +1,33 @@
+# i18n_es.messages
+#
+# Copyright (c) 2019 Rafael Corchuelo.
+#
+# In keeping with the traditional purpose of furthering education and research, it is
+# the policy of the copyright owner to permit non-commercial use and redistribution of
+# this software. It has been tested carefully, but it is not guaranteed for any particular
+# purposes.  The copyright owner does not request any warranties or representations, nor do
+# they accept any liabilities with respect to them.
+
+worker.application.list.label.reference = Referencia
+worker.application.list.label.status = Estatus
+worker.application.list.label.creationMoment = Fecha de creación
+worker.application.list.label.job = Trabajo
+
+worker.application.form.label.reference = Referencia
+worker.application.form.label.status = Estatus
+worker.application.form.label.statement = Declaración
+worker.application.form.label.creationMoment = Fecha de creación
+worker.application.form.label.skills = Habilidades
+worker.application.form.label.qualifications = Cualificaciones
+worker.application.form.label.answer.text = Texto
+worker.application.form.label.answer.passwordProtected = Protegida por contraseña
+worker.application.form.label.answer.password = Contraseña
+worker.application.form.button.job = Empleo
+worker.application.form.button.answer = Respuesta
+worker.application.form.button.return = Volver
+worker.application.form.button.create = Solicitar
+
+worker.application.error.tracer.notblank = No debe estar en blanco
+worker.application.error.tracer.url = URL no válida
+worker.application.error.password = La contraseña debe tener al menos diez caracteres de longitud y debe incluir al menos una letra, un número y un signo de puntuación
+worker.application.error.passwordProtected = Si introduce una contraseña, la solicitud debe estar protegida.
