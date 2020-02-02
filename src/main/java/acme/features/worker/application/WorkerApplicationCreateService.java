@@ -1,6 +1,7 @@
 
 package acme.features.worker.application;
 
+import java.util.Collection;
 import java.util.Date;
 
 import org.springframework.beans.factory.annotation.Autowired;
@@ -78,6 +79,7 @@ public class WorkerApplicationCreateService implements AbstractCreateService<Wor
 		assert request != null;
 		assert entity != null;
 		assert errors != null;
+		errors.state(request, this.checkReference(entity), "reference", "worker.application.error.reference");
 		if (entity.getJob().getBisit() != null) {
 			request.getModel().setAttribute("hasBisit", true);
 			String answerTracer = request.getModel().getString("answerTracer");
@@ -97,6 +99,16 @@ public class WorkerApplicationCreateService implements AbstractCreateService<Wor
 				}
 			}
 		}
+	}
+
+	private boolean checkReference(final Application app) {
+		Collection<Application> all = this.repository.findAllApplications();
+		for (Application a : all) {
+			if (app.getReference().equals(a.getReference())) {
+				return false;
+			}
+		}
+		return true;
 	}
 
 	private boolean checkURl(final String answerTracer) {

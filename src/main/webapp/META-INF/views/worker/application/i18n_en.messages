@@ -27,6 +27,7 @@ worker.application.form.button.answer = Answer
 worker.application.form.button.return = Return
 worker.application.form.button.create = Apply
 
+worker.application.error.reference = That application already exists
 worker.application.error.tracer.notblank = Must not be blank
 worker.application.error.tracer.url = Not a valid URL
 worker.application.error.password = Password must have a minimum length of ten characters and must include a letter, a digit and a punctuation symbol
