@@ -2,7 +2,9 @@
 package acme.entities.answers;
 
 import javax.persistence.Entity;
+import javax.validation.constraints.NotBlank;
 
+import org.hibernate.validator.constraints.Length;
 import org.hibernate.validator.constraints.URL;
 
 import acme.framework.entities.DomainEntity;
@@ -16,10 +18,12 @@ public class Answer extends DomainEntity {
 
 	private static final long	serialVersionUID	= 1L;
 
+	@NotBlank
 	@URL
 	private String				tracer;
 
 	private Boolean				passwordProtected;
 
+	@Length(min = 10)
 	private String				password;
 }

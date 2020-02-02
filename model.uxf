@@ -870,10 +870,10 @@ m2=1</panel_attributes>
       <h>72</h>
     </coordinates>
     <panel_attributes>&lt;&lt;Entity&gt;&gt;
-Daring
+Bisit
 --
-+text:String{NotBlank,Length(max=251)}
-+moreInfo:String{URL}</panel_attributes>
++text:String{NotBlank,Length(max=256)}
++tracer:String{URL}</panel_attributes>
     <additional_attributes/>
   </element>
   <element>
@@ -895,15 +895,15 @@ m2=1</panel_attributes>
     <coordinates>
       <x>1233</x>
       <y>342</y>
-      <w>198</w>
+      <w>207</w>
       <h>90</h>
     </coordinates>
     <panel_attributes>&lt;&lt;Entity&gt;&gt;
 Answer
 --
-+text:String{NotBlank}
++tracer:String{NotBlank,URL}
 +passwordProtected:Boolean
-+password:String</panel_attributes>
++password:String{Length(min=10)}</panel_attributes>
     <additional_attributes/>
   </element>
   <element>
@@ -925,11 +925,10 @@ m2=1</panel_attributes>
     <coordinates>
       <x>1233</x>
       <y>432</y>
-      <w>261</w>
-      <h>54</h>
+      <w>234</w>
+      <h>36</h>
     </coordinates>
-    <panel_attributes>Password must be at least ten characters 
-long and must include at least a letter,
+    <panel_attributes>Password must include at least a letter,
 a number and a puntuaction symbol
 bg=blue</panel_attributes>
     <additional_attributes/>
