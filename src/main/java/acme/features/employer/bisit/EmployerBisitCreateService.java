@@ -60,6 +60,9 @@ public class EmployerBisitCreateService implements AbstractCreateService<Employe
 	public void create(final Request<Bisit> request, final Bisit entity) {
 		assert request != null;
 		assert entity != null;
+		if (entity.getTracer().equals("")) {
+			entity.setTracer(null);
+		}
 		Bisit saved = this.repository.save(entity);
 		Job j = this.repository.findOneJobById(request.getModel().getInteger("id"));
 		j.setBisit(saved);
