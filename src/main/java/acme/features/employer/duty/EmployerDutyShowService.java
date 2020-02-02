@@ -36,9 +36,7 @@ public class EmployerDutyShowService implements AbstractShowService<Employer, Du
 		assert entity != null;
 		assert model != null;
 		request.unbind(entity, model, "title", "description", "percentage");
-		if (!entity.getJob().getFinalMode()) {
-			model.setAttribute("canBeUpdated", true);
-		}
+		model.setAttribute("canBeUpdated", !entity.getJob().getFinalMode());
 	}
 
 	@Override
